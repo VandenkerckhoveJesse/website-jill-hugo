@@ -17,27 +17,36 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
-    label: "Pages"
+    label: "Paginas"
     files:
       - file: "site/content/_index.md"
-        label: "Home Page"
+        label: "Hoofd pagina"
         name: "home"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: "Blurb", name: blurb, widget: object, fields: [
-              {label: "Heading", name: "heading", widget: string},
-              {label: "Text", name: "text", widget: "text"}]}
-          - {label: "Intro", name: intro, widget: object, fields: [
-              {label: "Heading", name: "heading", widget: string},
-              {label: "Text", name: "text", widget: "text"}]}
-          - {label: "Products", name: products, widget: list, fields: [
-              {label: "Image", name: "image", widget: "image"},
-              {label: "Text", name: "text", widget: "text"}]}
-          - {label: "Values", name: "values", widget: "object", fields: [
-              {label: "Heading", name: "heading", widget: string},
-              {label: "Text", name: "text", widget: "text"}]}
+          - {label: Titel, name: title, widget: string}
+          - {label: Subtitel, name: subtitle, widget: string}
+          - {label: HoofdAfbeelding, name: image, widget: image}
+          - {label: "Eigenschappen", name: specs, widget: list, fields: [
+              {label: "Hoofding", name: "heading", widget: string},
+              {label: "Titel", name: "title", widget: string},
+              {label: "Tekst", name: "text", widget: "text"}]}
+          - {label: "Intro", name: intro, widget: list, fields: [
+              {label: "Hoofding", name: "heading", widget: string},
+              {label: "Tekst", name: "text", widget: text}]}
+          - {label: "Sponsors", name: sponsors, widget: list, fields: [
+              {label: "Afbeelding", name: "image", widget: "image"},
+              {label: "Naam", name: "name", widget: text}]}
+          - {label: "Values", name: "values", widget: object, fields: [
+              {label: "Hoofding", name: "heading", widget: string},
+              {label: "Text", name: "text", widget: text}]}
+          - {label: "Kalender", name: "calendar", widget: object, fields: [
+              {label: "Ondertitel", name: "subtitle", widget: text},
+              {label: "Evenementen", name: "events", widget: list, fields: [
+                {label: "Datum", name: "date", widget: string},
+                {label: "Jaar", name: "year", widget: string},
+                {label: "Beschrijving", name: "text", widget: text}
+              ]}
+          ]}
       - file: "site/content/contact/_index.md"
         label: "Contact Page"
         name: "contact"
