@@ -1,94 +1,19 @@
-<section class="pt-10 pt-lg-20 pb-lg-5 bg-bg-1">
-	<div class="container">
-		<div class="row">
-			<div class="mb-15 text-center col-lg-6 aos-init aos-animate" data-aos="fade-down" data-aos-delay="250">
-				<img src="Startup%20preview%20-%20index_files/blog-6-1.jpg" srcset="Startup%20preview%20-%20index_files/blog-6-1@2x.jpg 2x" alt="" class="w-100 mb-4">
-				<p class="mb-2">
-Branding
-				</p>
-				<h2 class="mb-2 text-light-1">
-Variety of Designs
-				</h2>
-				<p class="fs-3 mb-10 remove-br">
-Imagine presentation on your device 
-					<br>without any troubles and missings
-				</p>
-				<a href="#" class="text-action-6 fw-bold">
-Read more
-				</a>
-			</div>
-			<div class="col-lg-3 col-sm-6 text-center text-sm-start aos-init aos-animate" data-aos="fade-down" data-aos-delay="500">
-				<div>
-					<img src="Startup%20preview%20-%20index_files/blog-6-2.jpg" srcset="Startup%20preview%20-%20index_files/blog-6-2@2x.jpg 2x" alt="" class="w-100 mb-4">
-					<p class="mb-2 text-light-1">
-Branding
-					</p>
-					<h5 class="mb-4 mb-sm-10 text-light-1">
-Variety of Designs
-					</h5>
-					<p class="fs-3 mb-8 text-light-1">
-Imagine presentation on your device without any troubles and missings
-					</p>
-					<a href="#" class="text-action-6 fw-bold">
-Read more
-					</a>
-					<div class="mt-8 mb-15 border-bottom opacity-20 border-light-1">
-					</div>
+<div class="bg-off-white pv4">
+	<div class="ph3 mw7 center">
+
+		<h2 class="f2 b lh-title mb3">Latest stories</h2>
+
+		<div class="w-100 flex-ns mhn1-ns flex-wrap mb3">
+			{{ range first 4 (where .Data.Pages "Type" "post") }}
+				<div class="ph1-ns w-50-ns flex">
+					{{ .Render "li" }}
 				</div>
-				<div>
-					<img src="Startup%20preview%20-%20index_files/blog-6-4.jpg" srcset="Startup%20preview%20-%20index_files/blog-6-4@2x.jpg 2x" alt="" class="w-100 mb-4">
-					<p class="mb-2 text-light-1">
-Branding
-					</p>
-					<h5 class="mb-4 mb-sm-10 text-light-1">
-Variety of Designs
-					</h5>
-					<p class="fs-3 mb-8 text-light-1">
-Imagine presentation on your device without any troubles and missings
-					</p>
-					<a href="#" class="text-action-6 fw-bold">
-Read more
-					</a>
-					<div class="mt-8 mb-15 border-bottom opacity-20 border-light-1">
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-sm-6 text-center text-sm-start aos-init aos-animate" data-aos="fade-down" data-aos-delay="750">
-				<div>
-					<img src="Startup%20preview%20-%20index_files/blog-6-3.jpg" srcset="Startup%20preview%20-%20index_files/blog-6-3@2x.jpg 2x" alt="" class="w-100 mb-4">
-					<p class="mb-2 text-light-1">
-Branding
-					</p>
-					<h5 class="mb-4 mb-sm-10 text-light-1">
-Variety of Designs
-					</h5>
-					<p class="fs-3 mb-8 text-light-1">
-Imagine presentation on your device without any troubles and missings
-					</p>
-					<a href="#" class="text-action-6 fw-bold">
-Read more
-					</a>
-					<div class="mt-8 mb-15 border-bottom opacity-20 border-light-1">
-					</div>
-				</div>
-				<div>
-					<img src="Startup%20preview%20-%20index_files/blog-6-5.jpg" srcset="Startup%20preview%20-%20index_files/blog-6-5@2x.jpg 2x" alt="" class="w-100 mb-4">
-					<p class="mb-2 text-light-1">
-Branding
-					</p>
-					<h5 class="mb-4 mb-sm-10 text-light-1">
-Variety of Designs
-					</h5>
-					<p class="fs-3 mb-8 text-light-1">
-Imagine presentation on your device without any troubles and missings
-					</p>
-					<a href="#" class="text-action-6 fw-bold">
-Read more
-					</a>
-					<div class="mt-8 mb-15 border-bottom opacity-20 border-light-1">
-					</div>
-				</div>
-			</div>
+			{{ end }}
 		</div>
+
+		<div class="tc">
+			<a href="/post" class="btn raise">Read more</a>
+		</div>
+
 	</div>
-</section>
+</div>
