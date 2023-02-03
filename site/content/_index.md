@@ -1,7 +1,7 @@
 ---
 title: Jill Danneels
 subtitle: De beste website ooit gemaakt
-image: img/about-direct-sourcing.jpg
+image: img/aqejwd7_700b.jpg
 specs:
   - heading: 100cc
     title: Motorinhoud
