@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ partial "landing-page" . }}
+{{ partial "landing-page" . (dict "imageUrl" .Params.image "title" .Params.title "subtitle" .Params.subtitle) }}
 
 {{ partial "stats" .}}
 
