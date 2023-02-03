@@ -4,7 +4,7 @@ backend:
 
 media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
-
+local_backend: true
 collections: # A list of collections the CMS should be able to edit
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
@@ -36,9 +36,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Sponsors", name: sponsors, widget: list, fields: [
               {label: "Afbeelding", name: "image", widget: "image"},
               {label: "Naam", name: "name", widget: text}]}
-          - {label: "Values", name: "values", widget: object, fields: [
-              {label: "Hoofding", name: "heading", widget: string},
-              {label: "Text", name: "text", widget: text}]}
           - {label: "Kalender", name: "calendar", widget: object, fields: [
               {label: "Ondertitel", name: "subtitle", widget: text},
               {label: "Evenementen", name: "events", widget: list, fields: [
