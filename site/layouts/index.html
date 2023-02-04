@@ -4,16 +4,16 @@
 
 {{ partial "stats" (dict "specs" .Params.specs)}}
 
-{{ partial "about" .}}
+{{ partial "about" (dict "intro" .Params.intro)}}
 
-{{ partial "blog" . }}
+{{ partial "blog" .}}
 
-{{ partial "sponsors" . }}
+{{ partial "sponsors" (dict "sponsors" .Params.sponsors)}}
 
-{{ partial "product" . }}
+<!--{{ partial "product" . }}-->
 
-{{ partial "kalender" . }}
+{{ partial "kalender" (dict "calendar" .Params.calendar)}}
 
-{{ partial "contact" . }}
+<!--{{ partial "contact" . }}--> 
 
 {{ end }}

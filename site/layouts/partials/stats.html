@@ -1,55 +1,18 @@
 <section class="py-10 py-lg-20 text-center bg-bg-3">
     <div class="container">
-        <div class="row">
-            <div class="mb-8 col-xl-3 col-sm-6 aos-init aos-animate" data-aos="fade-down" data-aos-delay="0">
-                <h2 class="display-5 text-action-1 mb-4 mb-xl-6">
-100%
-                </h2>
-                <h2 class="fs-3 mb-4">
-Many Useful Components
-                </h2>
-                <p class="mb-0">
-        Want to create something beautiful? 
-Now you can. In hours, not weeks. 
-                </p>
-            </div>
-            <div class="mb-8 col-xl-3 col-sm-6 aos-init aos-animate" data-aos="fade-down" data-aos-delay="150">
-                <h2 class="display-5 text-action-1 mb-4 mb-xl-6">
-55%
-                </h2>
-                <h2 class="fs-3 mb-4">
-Responsive Layout
-                </h2>
-                <p class="mb-0">
-        That’s a brilliant idea you’ve got. Build 
-it, and they will come. 
-                </p>
-            </div>
-            <div class="mb-8 mb-sm-0 col-xl-3 col-sm-6 aos-init aos-animate" data-aos="fade-down" data-aos-delay="250">
-                <h2 class="display-5 text-action-1 mb-4 mb-xl-6">
-        99%
-                </h2>
-                <h2 class="fs-3 mb-4">
-        Build Today
-                </h2>
-                <p class="mb-0">
-        Get your idea out there in the way you want it. Start with Startup.
-                </p>
-            </div>
-            <div class="col-xl-3 col-sm-6 aos-init aos-animate" data-aos="fade-down" data-aos-delay="400">
-                <h2 class="display-5 text-action-1 mb-4 mb-xl-6">
-21%
-                </h2>
-                <h2 class="fs-3 mb-4">
-Retina Ready
-                </h2>
-                <p class="mb-0">
-        Now you’re one step closer to the optimal design workflow. 
-                </p>
-                {{range .specs}}
-                    <h1>hey</h1>
-                {{end}}
-            </div>
+        <div class="row justify-content-md-center">
+            {{range .specs}}
+                <div class="mb-8 col-xl-3 col-sm-6 aos-init aos-animate" data-aos="fade-down" data-aos-delay="0">
+                    <h2 class="display-5 text-action-1 mb-4 mb-xl-6">
+                        {{.heading}}
+                    </h2>
+                    <h2 class="fs-3 mb-4">
+                        {{.title}}
+                    </h2>
+                    <p class="mb-0">
+                        {{.text}}
+                    </p>
+                </div>        
+            {{end}}
         </div>
-    </div>
 </section>

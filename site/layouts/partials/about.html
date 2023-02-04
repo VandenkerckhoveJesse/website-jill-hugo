@@ -1,32 +1,16 @@
 <section class="py-10 py-lg-20 bg-bg-3">
     <div class="container">
         <div class="row justify-content-center">
+            {{range .intro}}
             <div class="mb-8 mb-md-0 col-md-6 col-lg-5">
                 <p class="fs-1 font-heading text-dark-1 mb-6 remove-br aos-init aos-animate" data-aos="fade-down" data-aos-delay="0">
-    Everything you need to build 
-                    <br>your site in one place
+                    {{.heading}}
                 </p>
                 <p class="fs-4 mb-0 aos-init aos-animate" data-aos="fade-down" data-aos-delay="150">
-    We could create anything. Let’s do it together. Start growing in half the time with an 
-                    <span class="text-nowrap">
-        all-in-one
-                    </span>
-        website builder - no more long hours spent on the boring stuff! 
+                    {{.text}}
                 </p>
             </div>
-            <div class="col-md-6 col-lg-5">
-                <p class="fs-1 font-heading text-dark-1 mb-6 remove-br aos-init aos-animate" data-aos="fade-down" data-aos-delay="250">
-    We could create anything. 
-                    <br>Let’s do it together
-                </p>
-                <p class="fs-4 mb-0 aos-init aos-animate" data-aos="fade-down" data-aos-delay="400">
-    Everything you need to build your site in one place. 
-                    <span class="text-nowrap">
-        All-in-one
-                    </span>
-        website builder for designers and creators. Your big idea starts here.
-                </p>
-            </div>
+            {{end}}
         </div>
     </div>
 </section>
