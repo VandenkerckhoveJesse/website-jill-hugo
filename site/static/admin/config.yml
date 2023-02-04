@@ -45,7 +45,7 @@ collections: # A list of collections the CMS should be able to edit
               {label: "Evenementen", name: "events", widget: list, fields: [
                 {label: "Datum", name: "date", widget: string},
                 {label: "Jaar", name: "year", widget: string},
-                {label: "Titel", name: "title", widget: string}
+                {label: "Titel", name: "title", widget: string},
                 {label: "Beschrijving", name: "text", widget: text}
               ]}
           ]}
