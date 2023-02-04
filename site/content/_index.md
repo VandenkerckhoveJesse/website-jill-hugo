@@ -22,8 +22,10 @@ calendar:
   events:
     - date: 12/02
       year: "2045"
+      title: Race in die
       text: In het jaar 2045 zal ik de grootste race doen
     - date: 23/53
       year: "2034"
+      title: Race in daar
       text: Deze maand is heel erg vreemd, het komt door een schrikkeljaar
 ---

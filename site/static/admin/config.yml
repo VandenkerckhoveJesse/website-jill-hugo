@@ -7,6 +7,8 @@ public_folder: "img"
 local_backend: true
 collections: # A list of collections the CMS should be able to edit
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+    editor:
+      preview: false
     label: "Post" # Used in the UI, ie.: "New Post"
     folder: "site/content/post" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
@@ -17,6 +19,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
+    editor:
+      preview: false
     label: "Paginas"
     files:
       - file: "site/content/_index.md"
@@ -41,6 +45,7 @@ collections: # A list of collections the CMS should be able to edit
               {label: "Evenementen", name: "events", widget: list, fields: [
                 {label: "Datum", name: "date", widget: string},
                 {label: "Jaar", name: "year", widget: string},
+                {label: "Titel", name: "title", widget: string}
                 {label: "Beschrijving", name: "text", widget: text}
               ]}
           ]}
