@@ -49,9 +49,9 @@ collections: # A list of collections the CMS should be able to edit
                 {label: "Beschrijving", name: "text", widget: text}
               ]}
           ]}
-      - file: "site/content/contact/_index.md"
-        label: "Contact Page"
-        name: "contact"
+      - file: "site/content/nieuws/_index.md"
+        label: "Nieuws pagina"
+        name: "news"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Logo, name: logo, widget: image}
@@ -66,9 +66,9 @@ collections: # A list of collections the CMS should be able to edit
               - label: Text
                 name: text
                 widget: text
-      - file: "site/content/products/_index.md"
-        label: "Products Page"
-        name: "products"
+      - file: "site/content/pictures/_index.md"
+        label: "Fotos pagina"
+        name: "pictures"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
@@ -79,16 +79,16 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
           - {label: Full_image, name: full_image, widget: image}
           - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
-      - file: "site/content/values/_index.md"
-        label: "Values Page"
-        name: "values"
+      - file: "site/content/sponsors/_index.md"
+        label: "Sponsors pagina"
+        name: "sponsors"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - label: Values
-            name: values
+          - {label: Titel, name: title, widget: string}
+          - {label: Subtitel, name: subtitle, widget: text}
+          - label: Sponsors
+            name: sponsors
             widget: list
             fields:
-              - {label: Heading, name: heading, widget: string}
-              - {label: Text, name: text, widget: text}
-              - {label: Image, name: imageUrl, widget: image}
+              - {label: Afbeelding, name: image, widget: image}
+              - {label: Titel, name: title, widget: string}
+              - {label: Subtitel, name: subtitle, widget: string}
