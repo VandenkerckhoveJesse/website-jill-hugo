@@ -1,15 +1,16 @@
+{{define "main"}}
 <section class="pb-10 pb-lg-20 bg-bg-3">
     <div class="mb-10 mb-lg-20 py-20 bg-bg-1 bg-size-cover bg-position-bottom-center d-flex align-items-end" data-bg-src="i/blog-1-bg.jpg" data-bg-src-2x="i/blog-1-bg@2x.jpg" style="min-height: 50vh; background-image: url(&quot;i/blog-1-bg@2x.jpg&quot;);">
         <div class="container">
             <img src="Startup%20preview%20-%20nieuws_files/smiles.png" id="js-get-smile" class="visually-hidden" style="opacity: 0.01;"><div class="row align-items-baseline">
                 <div class="col-lg-4">
                     <p class="mb-0 text-light-2 aos-init aos-animate" data-aos="fade-down" data-aos-delay="0">
-                Startup Blog
+                        {{.Params.subtitle}}
                     </p>
                 </div>
                 <div class="col-lg-8">
                     <h2 class="text-light-1 display-5 aos-init aos-animate" data-aos="fade-down" data-aos-delay="250">
-                We could create anything
+                        {{.Params.title}}
                     </h2>
                 </div>
             </div>
@@ -104,3 +105,4 @@
         </div>
     </div>
 </section>
+{{end}}
