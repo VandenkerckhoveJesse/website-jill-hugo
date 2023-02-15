@@ -15,15 +15,21 @@
             {{range .Params.images}}
             {{if (eq .size "small")}}
             <div class="col-3">
-                <img src="{{.image}}" alt="" class="d-block w-100">
+                <a href="{{.image}}" class="d-block">
+                    <img src="{{.image}}" alt="" class="d-block w-100">
+                </a>
             </div>
             {{else if (eq .size "medium")}}
             <div class="col-6">
-                <img src="{{.image}}" alt="" class="d-block w-100">
+                <a href="{{.image}}" class="d-block">
+                    <img src="{{.image}}" alt="" class="d-block w-100">
+                </a>
             </div>
             {{else}}
             <div class="col-12">
-                <img src="{{.image}}" alt="" class="d-block w-100">
+                <a href="{{.image}}" class="d-block">
+                    <img src="{{.image}}" alt="" class="d-block w-100">
+                </a>
             </div>
             {{end}}
             {{end}}
