@@ -57,7 +57,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Subtitel, name: subtitle, widget: string}
       - file: "site/content/fotos/_index.md"
         label: "Fotos pagina"
-        name: "pictures"
+        name: "fotos"
         fields:
           - {label: Titel, name: title, widget: string}
           - {label: Subtitel, name: subtitle, widget: text}
