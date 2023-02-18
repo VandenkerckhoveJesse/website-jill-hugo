@@ -20,6 +20,7 @@ const LargeImage = ({image}) =>
 </div>;
 
 function getImage(size, image) {
+    image = "/" + image
     if (size == "small") {
         return <SmallImage image={image}/>
     }
