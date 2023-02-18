@@ -52,7 +52,7 @@ export default class FotosPreview extends React.Component {
                 </div>
                 <div class="row mt-6">
                     {images.map(({image, size}, i) =>
-                        this.getImage(size, image))}
+                        getImage(size, image))}
                 </div>
             </div>
         </section>
