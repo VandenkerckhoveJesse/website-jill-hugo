@@ -24,7 +24,7 @@ collections: # A list of collections the CMS should be able to edit
     label: "Paginas"
     files:
       - file: "site/content/_index.md"
-        label: "Hoofd pagina"
+        label: "Home"
         name: "home"
         fields:
           - {label: Titel, name: title, widget: string}
@@ -50,21 +50,23 @@ collections: # A list of collections the CMS should be able to edit
               ]}
           ]}
       - file: "site/content/nieuws/_index.md"
-        label: "Nieuws pagina"
+        label: "Nieuws"
         name: "news"
         fields:
-          - {label: Title, name: title, widget: string}
-      - file: "site/content/pictures/_index.md"
-        label: "Fotos pagina"
-        name: "pictures"
+          - {label: Titel, name: title, widget: string}
+          - {label: Subtitel, name: subtitle, widget: string}
+      - file: "site/content/fotos/_index.md"
+        label: "Fotos"
+        name: "fotos"
         fields:
           - {label: Titel, name: title, widget: string}
           - {label: Subtitel, name: subtitle, widget: text}
           - {label: Afbeeldingen, name: images, widget: list, fields: [
-              {label: Afbeelding, name: image, widget: image}
+              {label: Afbeelding, name: image, widget: image},
+              {label: Grootte, name: size, widget: "select", options: ["small", "medium", "large"]}
             ]}
       - file: "site/content/sponsors/_index.md"
-        label: "Sponsors pagina"
+        label: "Sponsors"
         name: "sponsors"
         fields:
           - {label: Titel, name: title, widget: string}
