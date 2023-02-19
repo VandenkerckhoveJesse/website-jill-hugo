@@ -33,9 +33,10 @@
                 <h1 class="display-3 mb-6 mb-md-15 aos-init aos-animate" data-aos="fade-down" data-aos-delay="500">
                     {{ .Params.title }}
                 </h1>
-                <p class="mb-8 fs-1 text-dark-1 aos-init aos-animate" data-aos="fade-down" data-aos-delay="750">
-                    {{ .Params.body }}
-                </p>
+
+                <div class="mb-8 fs-1 text-dark-1 aos-init aos-animate" data-aos="fade-down" data-aos-delay="750">
+                    {{ .Content }}
+                </div>
             </div>
         </div>
     </div>
