@@ -15,7 +15,7 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Hoofd afbeelding", name: "jumbotron", widget: "image"}
       - {label: "Titel", name: "title", widget: "string"}
-      - {label: "Datum", name: "date", widget: "datetime", format: "DD.MM.YYYY"}
+      - {label: "Datum", name: "date", widget: "datetime"}
       - {label: "Tekst", name: "body", widget: "markdown"}
       - {label: "Afbeeldingen", name: "images", widget: "list", fields: [
               {label: "Afbeelding", name: "image", widget: "image"}
