@@ -14,9 +14,8 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Hoofd afbeelding", name: "jumbotron", widget: "image"}
-      - {label: "Korte titel", name: "short", widget: "string"}
       - {label: "Titel", name: "title", widget: "string"}
-      - {label: "Datum", name: "date", widget: "date", format: "DD.MM.YYYY"}
+      - {label: "Datum", name: "date", widget: "datetime", format: "DD.MM.YYYY"}
       - {label: "Tekst", name: "body", widget: "markdown"}
       - {label: "Afbeeldingen", name: "images", widget: "list", fields: [
               {label: "Afbeelding", name: "image", widget: "image"}

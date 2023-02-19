@@ -17,16 +17,10 @@
                         <a href="#" class="text-dark-1">
                             Nieuws
                         </a>
-                        <span class="text-dark-1">
-                            /
-                        </span>
-                        <span class="text-dark-2">
-                            {{ .Params.short }}
-                        </span>
                     </div>
                     <div class="col-auto aos-init aos-animate" data-aos="fade-down" data-aos-delay="250">
                         <p class="mb-0">
-                            {{ .Params.date }}
+                            {{ .Date.Format "DD.MM.YYYY" }}
                         </p>
                     </div>
                 </div>
